@@ -1,0 +1,19 @@
+diff -ur a/include/configs/meson64.h b/include/configs/meson64.h
+--- a/include/configs/meson64.h	2022-01-10 11:46:34.000000000 -0700
++++ b/include/configs/meson64.h	2022-02-07 15:44:04.330415353 -0700
+@@ -18,13 +18,13 @@
+ 
+ /* For splashscreen */
+ #ifdef CONFIG_DM_VIDEO
+-#define STDOUT_CFG "vidconsole,serial"
++#define STDOUT_CFG "vidconsole"
+ #else
+ #define STDOUT_CFG "serial"
+ #endif
+ 
+ #ifdef CONFIG_USB_KEYBOARD
+-#define STDIN_CFG "usbkbd,serial"
++#define STDIN_CFG "usbkbd"
+ #else
+ #define STDIN_CFG "serial"
+ #endif
