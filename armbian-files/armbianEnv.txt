@@ -1,0 +1,7 @@
+verbosity=1
+console=both
+overlay_prefix=meson
+fdtfile=amlogic/meson-sm1-sei610.dtb
+rootdev=UUID=79ee788b-f3d4-4b08-b6fb-effee8fc3fe5
+rootfstype=ext4
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u

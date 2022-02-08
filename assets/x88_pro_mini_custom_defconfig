@@ -18,7 +18,8 @@ CONFIG_DEBUG_UART=y
 CONFIG_SYS_LOAD_ADDR=0x1000000
 CONFIG_OF_BOARD_SETUP=y
 CONFIG_USE_PREBOOT=y
-CONFIG_PREBOOT="usb start; setenv distro_bootcmd sysboot usb 0:1 any ${scriptaddr} /boot/extlinux/extlinux.conf"
+#CONFIG_PREBOOT="usb start; setenv distro_bootcmd sysboot usb 0:1 any ${scriptaddr} /boot/extlinux/extlinux.conf"
+CONFIG_PREBOOT="usb start;setenv prefix /boot/;setenv devtype usb;setenv devnum 0;setenv distro_bootpart 1;setenv script boot.scr;setenv distro_bootcmd run boot_a_script"
 # CONFIG_CONSOLE_MUX is not set
 # CONFIG_DISPLAY_CPUINFO is not set
 CONFIG_MISC_INIT_R=y
